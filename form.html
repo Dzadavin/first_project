@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pink</title>
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo-link">
+        <img class="page-header__logo-image" src="" width="" height="" alt="Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="toggle"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <img class="page-header__back-image" src="" width="" height="" alt="">
+      <p class="page-header__action">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </p>
+    </header>
+
+    <main class="page-main form">
+      <h1 class="visually-hidden">Приложение Pink - форма</h1>
+      <form class="page-main__form" action="http://echo.htmlacademy.ru" method="POST">
+        <p class="page-main__title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз - 
+          1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+        <section class="user-about">
+          <label class="user-about__first-name" for="fname">Фамилия:</label>
+          <input class="user-about__fname-input" name="first-name" id="fname" 
+          placeholder="Укажите вашу фамилию*" required>
+          <label class="user-about__name" for="name">Имя:</label>
+          <input class="user-about__name-input" name="name" id="name" 
+          placeholder="Введите ваше имя*" required>
+          <label class="user-about__patronymic" for="patronymic">Отчество:</label>
+          <input class="user-about__patronymic-input" name="patronymic" id="patronymic" 
+          placeholder="Ну и отчество тоже">
+        </section>
+
+        <section class="application program">
+          <fieldset class="application__group">
+            <legend class="application__title">С каким приложением путешествовали?</legend>
+            <input class="program__check" type="radio" name="app-type" 
+            id="app-iOS" value="iOS">
+            <label class="program__label" for="app-iOS">Pink для iOS</label>
+            <input class="program__check" type="radio" name="app-type" 
+            id="app-android" value="Android">
+            <label class="program__label" for="app-android">Pink для Android</label>
+            <input class="program__check" type="radio" name="app-type" 
+            id="app-windows-phone" value="Windows Phone">
+            <label class="program__label" for="app-windows-phone">Windows Phone</label>
+          </fieldset>
+        </section>
+
+        <section class="user-contacts contact">
+          <fieldset class="user-contacts__group">
+            <legend class="user-contacts__title">Контактная информация</legend>
+            <input class="contact__tel" type="tel" id="num" placeholder="Номер пожалуйста">
+            <label class="contact__tel-caption" for="num">Номер телефона</label>
+            <input class="contact__email" type="email" id="email" placeholder="Введите почту*"
+            required>
+            <label class="contact__email-caption" for="email">Адрес почты</label>
+          </fieldset>
+        </section>
+
+        <section class="achievement progress">
+          <fieldset class="achievement__group">
+            <legend class="achievement__title">Ваши безбашенные достижения 
+              в путешествии</legend>
+            <input class="progress__type" type="checkbox" id="selfi">
+            <label class="progress__about" for="selfi">Сделал селфи с акулой</label>
+            <input class="progress__type" type="checkbox" id="burn">
+            <label class="progress__about" for="burn">Обгорел на пляже</label>
+            <input class="progress__type" type="checkbox" id="chack">
+            <label class="progress__about" for="chack">Увидел Чака Норриса</label>
+            <input class="progress__type" type="checkbox" id="souvenir">
+            <label class="progress__about" for="souvenir">Накупил сувениров</label>
+            <input class="progress__type" type="checkbox" id="tower">
+            <label class="progress__about" for="tower">Удержал башню</label>
+            <input class="progress__type" type="checkbox" id="crash">
+            <label class="progress__about" for="crash">Разгромил отель</label>
+          </fieldset>
+        </section>
+
+        <section class="emotion emo">
+          <fieldset class="emotion__group">
+            <legend class="emotion__title">Опишите свои эмоции</legend>
+            <textarea class="emo__text" cols="100" rows="10" name="emotions"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </section>
+
+        <div class="group">
+          <button class="form__send" type="submit">Отправить форму</button>
+          <p class="group__necessary form__required">
+            <span class="form__red">*</span>
+            -Обязательные поля
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo-link">
+          <img class="page-footer__logo-image" src="" width="" height="" alt="Pink">
+        </a>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" 
+              href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook"
+              href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" 
+              href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
